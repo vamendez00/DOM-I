@@ -40,3 +40,52 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let myNavLinks = document.querySelectorAll("nav a");
+console.log("myNavLinks:", myNavLinks);
+
+myNavLinks[0].textContent = "Services";
+myNavLinks[1].textContent = "Product";
+myNavLinks[2].textContent = "Vision";
+myNavLinks[3].textContent = "Features";
+myNavLinks[4].textContent = "About";
+myNavLinks[5].textContent = "Contact";
+
+let myCTAText = document.querySelector("h1");
+myCTAText.textContent = "DOM IS AWESOME";
+console.log("ctatext:", myCTAText);
+
+let myCTAButton = document.querySelector("button");
+myCTAButton.textContent = "Get Started";
+
+let myCTAImage = document.getElementById("cta-img");
+myCTAImage.src = "img/header-img.png";
+
+let myMiddleImage = document.getElementById("middle-img");
+myMiddleImage.src = "img/mid-page-accent.jpg";
+
+let myBodyContentHeaders = document.querySelectorAll("h4");
+console.log ("myHeaders:", myBodyContentHeaders);
+
+myBodyContentHeaders[0].textContent = "Features";
+myBodyContentHeaders[1].textContent = "About";
+myBodyContentHeaders[2].textContent = "Services";
+myBodyContentHeaders[3].textContent = "Product";
+myBodyContentHeaders[4].textContent = "Vision";
+
+let myBodyContentText = document.querySelectorAll("p");
+console.log ("myBodyText:", myBodyContentText);
+
+myBodyContentText[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+myBodyContentText[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+myBodyContentText[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+myBodyContentText[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+myBodyContentText[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let myContact = document.getElementsByClassName(".contact");
+console.log (myContact);
+
+let myContactHeader = myContact.querySelector("h4");
+console.log(myContactHeader);
+myContactHeader.textContent = "Contact";
+ 
