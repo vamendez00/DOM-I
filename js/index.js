@@ -94,7 +94,7 @@ contactInfoTitle.textContent = "Contact";
 
 let contactInfoContent = document.querySelectorAll(".contact p");
 // console.log ("myContactInfo:", contactInfoContent);
-contactInfoContent[0].textContent = "123 Way 456 Street Somewhere, USA";
+contactInfoContent[0].innerHTML = "123 Way 456 Street" + "<br \>" + "Somewhere, USA";
 contactInfoContent[1].textContent = "1 (888) 888-8888";
 contactInfoContent[2].textContent = "sales@greatidea.io";
 
